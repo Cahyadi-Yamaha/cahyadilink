@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cahyadi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Foto Profil Bisa Diklik -->
+        <img src="foto-profil.jpg" alt="Foto Profil" class="profile-pic" onclick="openModal()">
+        
+        <h1>Cahyadi</h1>
+        <p>Jalan A.P. Pettarani Nomor.18, Kota Makassar
+</p>
+
+        <div class="button-container">
+            <a href="https://www.tiktok.com/@sentral.yamaha.mks?_t=ZS-8tXkVam6DaL&_r=1" class="btn tiktok">TikTok</a>
+            <a href="https://wa.me/6281312161726" class="btn whatsapp">WhatsApp</a>
+            <a href="https://motor123.id/yamaha-makassar" class="btn yamaha">Yamaha</a>
+        </div>
+    </div>
+
+    <!-- Modal untuk Foto -->
+    <div id="photoModal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="fullImage">
+    </div>
+
+    <div id="loading">
+    <div class="spinner"></div>
+</div>
+    
+    <script src="script.js"></script>
+    
+    <!-- AOS Library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+</body>
+</html>
